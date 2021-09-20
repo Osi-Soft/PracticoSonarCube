@@ -11,6 +11,8 @@ namespace TechTalksMQProcessor
     {
         static IConfiguration Configuration;
 
+	protected Program() { }
+
         static void Main(string[] args)
         {
             var metricServer = new MetricServer(port:8080);
